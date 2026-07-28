@@ -1,0 +1,326 @@
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git config user.name "geethasupriya4"
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git config user.name "geethasupriya4"
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git config user.email "geethasupriya4@gmail.com"
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git add .
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git commit -m "first commit"
+[main 45663b4] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test_02/hello.txt.txt
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git log
+commit 45663b46c066d6868a047dcb39d1b969e04c4728 (HEAD -> main)
+Author: geethasupriya4 <geethasupriya4@gmail.com>
+Date:   Tue Jul 28 15:27:12 2026 +0530
+
+    first commit
+
+commit c8edb2159b3245394966d1958bd58bde751d676c (origin/main)
+Author: geethasupriya4 <geethasupriya4@gmail.com>
+Date:   Tue Jul 28 11:58:53 2026 +0530
+
+    adding files
+
+commit afa15b115a0f978c11926d4898db02cb0056a84d
+Author: geethasupriya4 <geethasupriya4@gmail.com>
+Date:   Tue Jul 28 07:30:07 2026 +0530
+
+    adding sv files
+
+commit f0e9eab262d007f638f05695c8aebd5ef610c93e
+Author: geethasupriya4 <geethasupriya4@gmail.com>
+Date:   Tue Jul 28 07:11:23 2026 +0530
+
+    inital test_file_01
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.txt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git diff
+diff --git a/test_02/hello.txt.txt b/test_02/hello.txt.txt
+index 0dec223..3e22c49 100644
+--- a/test_02/hello.txt.txt
++++ b/test_02/hello.txt.txt
+@@ -1 +1,2 @@
+ Hello git
++this is the first line
+\ No newline at end of file
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git add .
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.txt.txt
+
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git commit -m "updated hello.txt"
+[main 2f46e97] updated hello.txt
+ 1 file changed, 1 insertion(+)
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git log
+commit 2f46e97ebc39bcf7ce7bec2f1d9b2ee216fc1a5e (HEAD -> main)
+Author: geethasupriya4 <geethasupriya4@gmail.com>
+Date:   Tue Jul 28 15:40:13 2026 +0530
+
+    updated hello.txt
+
+commit 45663b46c066d6868a047dcb39d1b969e04c4728
+Author: geethasupriya4 <geethasupriya4@gmail.com>
+Date:   Tue Jul 28 15:27:12 2026 +0530
+
+    first commit
+
+commit c8edb2159b3245394966d1958bd58bde751d676c (origin/main)
+Author: geethasupriya4 <geethasupriya4@gmail.com>
+Date:   Tue Jul 28 11:58:53 2026 +0530
+
+    adding files
+
+commit afa15b115a0f978c11926d4898db02cb0056a84d
+Author: geethasupriya4 <geethasupriya4@gmail.com>
+Date:   Tue Jul 28 07:30:07 2026 +0530
+
+    adding sv files
+
+commit f0e9eab262d007f638f05695c8aebd5ef610c93e
+Author: geethasupriya4 <geethasupriya4@gmail.com>
+Date:   Tue Jul 28 07:11:23 2026 +0530
+
+    inital test_file_01
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git log online
+fatal: ambiguous argument 'online': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git log oneline
+fatal: ambiguous argument 'oneline': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git -h
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   restore    Restore working tree files
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   diff       Show changes between commits, commit and working tree, etc
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   backfill   Download missing objects in a partial clone
+   branch     List, create, or delete branches
+   commit     Record changes to the repository
+   history    EXPERIMENTAL: Rewrite history
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   reset      Set `HEAD` or the index to a known state
+   switch     Switch branches
+   tag        Create, list, delete or verify tags
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git --help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   restore    Restore working tree files
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   diff       Show changes between commits, commit and working tree, etc
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   backfill   Download missing objects in a partial clone
+   branch     List, create, or delete branches
+   commit     Record changes to the repository
+   history    EXPERIMENTAL: Rewrite history
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   reset      Set `HEAD` or the index to a known state
+   switch     Switch branches
+   tag        Create, list, delete or verify tags
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git log -h
+usage: git log [<options>] [<revision-range>] [[--] <path>...]
+   or: git show [<options>] <object>...
+
+    -q, --[no-]quiet      suppress diff output
+    --[no-]source         show source
+    --[no-]use-mailmap    use mail map file
+    --[no-]mailmap        alias of --use-mailmap
+    --clear-decorations   clear all previously-defined decoration filters
+    --[no-]decorate-refs <pattern>
+                          only decorate refs that match <pattern>
+    --[no-]decorate-refs-exclude <pattern>
+                          do not decorate refs that match <pattern>
+    --[no-]decorate[=...] decorate options
+    -L <range:file>       trace the evolution of line range <start>,<end> or function :<funcname> in <file>
+
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git log -h
+usage: git log [<options>] [<revision-range>] [[--] <path>...]
+   or: git show [<options>] <object>...
+
+    -q, --[no-]quiet      suppress diff output
+    --[no-]source         show source
+    --[no-]use-mailmap    use mail map file
+    --[no-]mailmap        alias of --use-mailmap
+    --clear-decorations   clear all previously-defined decoration filters
+    --[no-]decorate-refs <pattern>
+                          only decorate refs that match <pattern>
+    --[no-]decorate-refs-exclude <pattern>
+                          do not decorate refs that match <pattern>
+    --[no-]decorate[=...] decorate options
+    -L <range:file>       trace the evolution of line range <start>,<end> or function :<funcname> in <file>
+
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git log --help
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git log --oneline
+2f46e97 (HEAD -> main) updated hello.txt
+45663b4 first commit
+c8edb21 (origin/main) adding files
+afa15b1 adding sv files
+f0e9eab inital test_file_01
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git show HEAD~1:hello.txt
+fatal: path 'hello.txt' does not exist in 'HEAD~1'
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git show HEAD~1:hello.txt
+fatal: path 'hello.txt' does not exist in 'HEAD~1'
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ pwd
+/g/GIT/test_02
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$ git show HEAD~1:hello.txt
+fatal: path 'hello.txt' does not exist in 'HEAD~1'
+
+ragha@Sweety MINGW64 /g/GIT/test_02 (main)
+$
