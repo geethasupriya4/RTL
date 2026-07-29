@@ -3,3 +3,4 @@ this is the first line
 this is from feature-1
 this is the last line
 the end
+this is modified
